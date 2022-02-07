@@ -1,0 +1,108 @@
+@import '../../../variables.css';
+
+.pc-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    -webkit-box-shadow: 4px 5px 5px -3px #000000; 
+    box-shadow: 4px 5px 5px -3px #000000;
+    background-color: white;
+    border-radius: 1rem;
+    height: 32rem;
+    overflow-y: hidden;
+    transition: all .8s ease-in-out ;
+}
+
+.pc-card:hover{
+    height: 75rem;
+}
+
+.pc-web-image{
+    width: 100%;
+    height: 20rem;
+}
+
+.pc-proyect-name{
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 700;
+    color: var(--orange);
+
+}
+
+.pc-description{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: var(--mainBlue);
+}
+
+.pc-tech-use-title{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--orange);
+}
+
+.pc-line-tech-used{
+    width: 100%;
+    height: 1px;
+    background-color: var(--orange);
+}
+
+
+.pc-con-tech-img{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(8.5rem, 8.5rem));
+    width: 100%;
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+}
+
+.pc-tech-image{
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 5px;
+}
+
+.pc-title-link{
+    font-size: 1.8rem;
+    margin: .5rem 0;
+}
+
+.pc-link{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #54457F;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+
+
+.pc-card-animation{
+    height: 75rem;
+    animation-fill-mode: both;
+    animation: show-proyect-info 1s ease-in;
+}
+
+.pc-card-aniamtion-reverse{
+    height: 32rem;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation: show-proyect-info .6s ease-in;
+}
+
+
+@keyframes show-proyect-info {
+    from {
+        height: 32rem;
+    }
+    to { 
+        height: 75rem;
+    }
+  }
+

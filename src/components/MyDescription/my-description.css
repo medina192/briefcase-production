@@ -1,0 +1,70 @@
+@import '../../variables.css';
+
+.my-con-description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-con-items-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 6rem 0;
+}
+
+.my-image{
+    width: 40rem;
+    height: 40rem;
+    margin-right: 4rem;
+    visibility: hidden;
+}
+
+.my-image-animation{
+    visibility: visible;
+    animation: turn-profile-image 1.5s ease-in;
+}
+
+.my-con-about-me{
+    width: 60rem;
+    margin-left: 4rem;
+}
+
+.my-text-about-me{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+.my-text-about-me-animation{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    overflow-y: hidden;
+    visibility: visible;
+    animation: move-2-left-text 1.5s ease-in;
+}
+
+
+@keyframes turn-profile-image {
+    from {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+    to { 
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+  }
+
+  @keyframes move-2-left-text {
+    from {
+        transform: translateX(15rem);
+        opacity: 0;
+    }
+    to { 
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+  }

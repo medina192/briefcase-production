@@ -1,0 +1,142 @@
+
+@import '../../variables.css';
+
+.cf-con{
+    margin-bottom: 5rem;
+    background-color: bisque;
+}
+
+.cf-con-form-icons{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+.cf-form-title{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cf-con-left-right{
+    display: flex;
+}
+
+.cf-flex-con-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cf-con-grid-icons{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem 1.5rem; 
+    grid-template-columns: repeat(2, auto);
+}
+
+.cf-icon-grid{
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+
+
+.cf-text-icon-grid{
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+
+.cf-con-flex-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.cf-con-icon-flex{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.cf-icon-flex{
+    font-size: 2.8rem;
+    color: white;
+}
+
+
+
+.cf-con-form-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+
+    padding: 5rem 2rem 2rem;
+}
+
+.cf-text-input{
+    width: 100%;
+    font-size: 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    border: 1px solid #666;
+    outline: none;
+    padding: .8rem;
+}
+
+.cf-text-input:focus{
+    border: 1px solid var(--orange);
+    box-shadow: 0px 0px 3px 1px var(--orange);
+}
+
+.cf-text-area-input{
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #666;
+    outline: none;
+    padding: .8rem;
+}
+
+.cf-text-area-input:focus{
+    border: 1px solid var(--orange);
+    box-shadow: 0px 0px 3px 1px var(--orange);
+}
+
+.cf-send-email-btn{
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: var(--orange);
+    transition: all .1s ease-in;
+    font-size: 2rem;
+    color: white;
+}
+
+.cf-send-email-btn:hover{
+    
+}
+
+
+

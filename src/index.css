@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.max-width-con{
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+@import '../../variables.css';
+
+.mb-con{
+    position: relative;
+    margin-left: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mb-con-titles{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-title-developer{
+    color: white;
+    opacity: 0;
+    margin: 0;
+    font-size: 3.5rem;
+    animation-name: movetitles;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.53,.11,.57,.95);
+    animation-fill-mode: forwards;
+}
+
+@keyframes movetitles {
+    0% {
+        transform: translateY(50vh);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
