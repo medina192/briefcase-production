@@ -15,10 +15,11 @@
     transition: all .8s ease-in-out ;
 }
 
+/*
 .pc-card:hover{
     height: 75rem;
 }
-
+*/
 .pc-web-image{
     width: 100%;
     height: 20rem;
