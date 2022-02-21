@@ -21,6 +21,7 @@
     --outline-title2: #ffffff;
     --color-black: #09e4bf;
     background-color: bisque;
+    background-color: black;
     }
   
   /* Sections
@@ -37,7 +38,6 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   }
 
   code {

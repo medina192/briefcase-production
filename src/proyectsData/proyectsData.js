@@ -2,7 +2,7 @@
 exports.proyectsData = [
     {
         name: 'Dress Shop',
-        urlImage: '/img/store.png',
+        urlImage: '/img/store.jpg',
         description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
         technologies: [
             {
@@ -68,7 +68,7 @@ exports.proyectsData = [
     },
     {
         name: 'Weather app',
-        urlImage: '/img/weather.png',
+        urlImage: '/img/weather.jpg',
         description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
         technologies: [
             {
@@ -100,8 +100,8 @@ exports.proyectsData = [
         ]
     },
     {
-        name: 'Dress Shop',
-        urlImage: '/img/my_image.jpg',
+        name: 'Bug Chat',
+        urlImage: '/img/chat.png',
         description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
         technologies: [
             {
@@ -127,11 +127,11 @@ exports.proyectsData = [
         ],
         urls: [
             {
-                url: 'www.jdjdjd',
+                url: 'http://161.35.224.248:3001/chat/auth/login',
                 available: true
             },
             {
-                url: 'www.jdjdjd',
+                url: 'https://github.com/medina192/backend-chat',
                 available: true
             }
         ]

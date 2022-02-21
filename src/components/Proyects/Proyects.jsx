@@ -9,7 +9,7 @@ const Proyects = () => {
   
 
   return (
-    <div className='p-con'>
+    <div id="proyects" className='p-con'>
         <div className="max-width-con">
             <h3 className='p-title'>Proyects</h3>
             <div className='p-line'></div>

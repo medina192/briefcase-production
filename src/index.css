@@ -17,3 +17,8 @@ code {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.p-opacity-background{
+  background-color: rgb(201, 28, 28);
+  z-index: 100;
+}

@@ -3,6 +3,7 @@
 .my-con-description{
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .my-con-items-description{
@@ -31,11 +32,15 @@
 }
 
 .my-text-about-me{
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     overflow-y: hidden;
     overflow-x: hidden;
     visibility: hidden;
+}
+
+.md-highlight-text{
+    font-weight: 700;
 }
 
 .my-text-about-me-animation{
@@ -45,6 +50,21 @@
     visibility: visible;
     animation: move-2-left-text 1.5s ease-in;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes turn-profile-image {
@@ -68,3 +88,74 @@
         opacity: 1;
     }
   }
+
+
+  @media (max-width: 500px){
+    .my-con-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        max-width: 100vw;
+    }
+    
+    .my-con-items-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90vw;
+    }
+    
+    .my-image{
+        width: 26rem;
+        height: 26rem;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        visibility: hidden;
+    }
+    
+    .my-image-animation{
+        visibility: visible;
+        animation: turn-profile-image 1.5s ease-in;
+    }
+    
+    .my-con-about-me{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .my-text-about-me{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        visibility: hidden;
+        text-justify: center;
+    }
+    
+    .md-highlight-text{
+        font-weight: 700;
+    }
+    
+    @keyframes move-2-top-text {
+        from {
+            transform: translateY(15rem);
+            opacity: 0;
+        }
+        to { 
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+      }
+    
+
+    .my-text-about-me-animation{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        overflow-y: hidden;
+        visibility: visible;
+        animation: move-2-top-text 1.5s ease-in;
+    }
+  }
+

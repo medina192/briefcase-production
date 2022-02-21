@@ -1,162 +1,162 @@
 
-import React from 'react';
-import Particles from "react-tsparticles";
+import React, { useState, useEffect, useRef } from 'react';
+
 import './main-background.css'
+import ParticlesBackGround from './ParticlesBackGround/ParticlesBackGround';
+
 //https://www.wallpaperflare.com/search?wallpaper=binary
 // https://particles.js.org/docs/interfaces/Options_Interfaces_Background_IBackground.IBackground.html
 
+// typing effects
+// https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return width;
+  }
+  
+
 const MainBackground = () => {
 
-    const particlesInit = (main) => {
-        //console.log(main);
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    };
+    const [changeTypeText, setchangeTypeText] = useState('Frontend: React Js');
+    const [widthScreen, setSidthScreen] = useState(getWindowDimensions);
 
-    const particlesLoaded = (container) => {
-        //console.log(container);
-    };
+    console.log('width', widthScreen);
+
+    useEffect(() => {
+      
+        /*
+        setTimeout(() => {
+            setchangeTypeText('Backend: Node Js')
+        }, 5100);
+
+        
+        setTimeout(() => {
+            setchangeTypeText('Mobile: React-Native, Kotlin')
+        }, 10600);
+
+        setTimeout(() => {
+            setchangeTypeText('Alejandro Díaz Developer')
+        }, 15700);
+        */
+
+    window.addEventListener('resize', () => {
+    });
+      return () => {
+        
+      }
+    }, [])
+    
+
 
   return (
       <div className='mb-con'>
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            width='98vw'
-            height="100vh"
-            
-            options={{
-                fullScreen: { enable: false, zIndex: 1  },
-                background: {
-                    
-                //image: "url('https://particles.js.org/images/background3.jpg')",
-                image: `url('../../img/network.jpg')`,    
-                position: '50% 50%',
-                repeat: 'no-repeat',
-                size: 'cover',
-                opacity: {
-                    value: 1,
-                },
-                color: {
-                    value: "#0047a1",
-                },
-                },
-                fpsLimit: 30,
-                interactivity: {
-                events: {
-                    onClick: {
-                    enable: true,
-                    mode: "push",
-                    },
-                    onHover: {
-                    enable: true,
-                    //mode: "repulse",
-                    //mode: 'trail',
-                    //mode: 'bubble',
-                    //mode: 'grab',
-                    //mode: 'connect'
-                    //mode: 'slow'
-                    //mode: 'pull'
-                    //mode: 'light'
-                    //mode: 'attract'
-                    // mode: 'bounce'
-                    mode: [
-                        "repulse"
-                      ]
-                    },
-                    resize: true,
-                },
-                rotate: {
-                    value: 0,
-                    random: true,
-                    direction: "counter-clockwise",
-                    animation: {
-                    enable: true,
-                    speed: 15,
-                    sync: false
-                    }
-                  },
-                modes: {
-                    bubble: {
-                    distance: 400,
-                    duration: 2,
-                    opacity: 0.8,
-                    size: 40,
-                    },
-                    push: {
-                    quantity: 4,
-                    },
-                    repulse: {
-                    distance: 100,
-                    duration: 0.4,
-                    },
-                },
-                },
-                particles: {
-                color: {
-                    value: "#ffffff",
-                },
-                links: {
-                    color: "#ffffff",
-                    distance: 150,
-                    enable: true,
-                    opacity: 0.5,
-                    width: 1,
-                },
-                collisions: {
-                    enable: true,
-                },
-                move: {
-                    direction: "none",
-                    enable: true,
-                    outMode: "bounce",
-                    random: false,
-                    speed: 2,
-                    straight: false,
-                    //attract: {
-                      //  enable: true,
-                        //rotateX: 600,
-                        //rotateY: 1200
-                   // }
-                },
-                number: {
-                    density: {
-                    enable: true,
-                    area: 800,
-                    },
-                    value: 80,
-                },
 
-                shape: {
-                    type: "circle",
-                },
-                size: {
-                    random: true,
-                    value: 4,
-                },
-                },
-                detectRetina: true,
-                /*
-                config_demo: {
-                    hide_card: false,
-                    background_color: "#ffffff",
-                    background_image: "url('./img/my-image.jpg')",
-                    background_position: "50% 50%",
-                    background_repeat: "no-repeat",
-                    background_size: "cover"
-                  }
-                  */
-                 
-            }}
-            />
-        <div className="con-nab-bar">
-            
+        <ParticlesBackGround />
+        
+        <div className="mb-con-nab-bar">
+            <p className='mb-my-name-anchor-link'>Alejandro<span>Díaz</span>Developer</p>
+            <div className="mb-con-btn-navigate">
+              <a href='#aboutMe' className='mb-anchor-link'>About me</a>
+              <a href='#proyects' className='mb-anchor-link'>Proyects</a>
+              <a href='#contact' className='mb-anchor-link'>Contact</a>
+              <p className='mb-anchor-link mb-show-cv'>Download CV</p>
+            </div>
         </div>
+
+        <div className="mb-opacity-background"></div>
+        
         <div className="mb-con-titles">
-            <h1 className='mb-title-developer'>FullStack Javascript Developer</h1>
+            
+            {
+              widthScreen > 500?
+              (
+                <h1 className='mb-title-developer'>
+                 Full Stack Javascript Developer
+                </h1>
+              ) 
+              :
+              (
+                <h1 className='mb-title-developer'>
+                    &nbsp;
+                    &ensp;
+                    &ensp;
+                    &ensp;
+                    Full Stack 
+                    <br />
+                    Javascript 
+                    Developer
+                </h1>
+              )
+            }
+
+
+            <div className='mb-con-typing-letters'>
+            {
+              widthScreen > 500?
+              (
+                <p className='mb-text-typing-1'>
+                  Alejandro Díaz Developer
+                </p>
+              ) 
+              :
+              (
+                <p className='mb-text-typing-1'>
+                  
+                   Alejandro 
+                <br />
+                  &nbsp;
+                  &ensp;
+                   Diaz 
+                 <br />
+                Developer
+                </p>
+              )
+            }
+                <div className='mb-animate-cursor'></div>
+            </div>
+
+            <p className='mb-aux-text'>{'Nothing'}</p>
         </div>
+
      </div>
   );
 };
 
 export default MainBackground;
+
+/*
+
+            <div className='con'>
+                <p className='pp'>hola como estas?</p>
+                <div className='cur'></div>
+            </div>
+
+            .con{
+    background-color: #61dafb;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pp{
+    width: 55rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 7rem;
+    background-color: aliceblue;
+    animation: key-pp 1.5s steps(16, end) 1s 1 normal,
+               key-pp 1.5s steps(16, end) 5s 1 reverse
+              
+               cursor .312s steps(2, end) 1s infinite;
+            
+  }
+  
+  .cur{
+    margin-left: 1rem;
+    width: 10px;
+    height: 6rem;
+    background-color: black;
+    animation: custom-cursor .3s steps(2, end) 1s infinite alternate;
+  }
+*/

@@ -4,7 +4,8 @@ import './my-description.css'
 const MyDescription = () => {
 
     const conVisible = useRef(null);
-    const [showAnimation, setShowAnimation] = useState(false);
+    const [showAnimationImage, setShowAnimationImage] = useState(false);
+    const [showAnimationText, setShowAnimationText] = useState(false);
 
     const listenerScroll = (e) => {
 
@@ -22,38 +23,54 @@ const MyDescription = () => {
         const yTop = conVisible.current.getBoundingClientRect().top;
         const { innerWidth: width, innerHeight: height } = window;
 
-        //console.log('hiii', yTop);
-        if(yTop < (0.4 * width))
+
+        if(width > 500)
         {
-            setShowAnimation(true);
-          //  console.log('----------------------------', showAnimation.current)
+            setShowAnimationImage(true);
+            setShowAnimationText(true);
+        }
+        else{
+            if(yTop < (0.3 * height))
+            {
+                setShowAnimationImage(true);
+            }
+            if(yTop < (-0.3 * height))
+            {
+                setShowAnimationText(true);
+            }
         }
     }
     
 
     return (
-        <div ref={conVisible} className="my-con-description">
+        <div ref={conVisible} id="aboutMe" className="my-con-description">
             <div className="max-width-con">
                 <div className="my-con-items-description">
                     <img src='/img/my_image.jpg' 
-                        className={`my-image ${showAnimation ? 'my-image-animation' : ''}`} 
+                        className={`my-image ${showAnimationImage ? 'my-image-animation' : ''}`} 
                         alt="me"  />
                     <div className="my-con-about-me">
                         <p 
-                            className={`my-text-about-me ${showAnimation ? 'my-text-about-me-animation' : ''}`} 
+                            className={`my-text-about-me ${showAnimationText ? 'my-text-about-me-animation' : ''}`} 
                             >
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a <br /> <br /> galley of type and scrambled it to make a type 
-                            specimen book. It has survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was popularised 
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                                passages, and more recently with desktop publishing software like Aldus 
-                                PageMaker including versions of Lorem Ipsum.
-                                in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                                passages, and more recently with desktop publishing software like Aldus 
-                                PageMaker including versions of Lorem Ipsum
-                            hola
+                                ¡Hello!, my name is 
+                                <span className='md-highlight-text'> José Alejandro Díaz Medina </span>
+                                and i am a <span className='md-highlight-text'>Full Stack developer </span>
+                                (Frontend, Backend) and 
+                                 <span className='md-highlight-text'> Mobile developer </span>
+                                 (iOS and Android applications)
+                                 specialized in javascript technologies (React, React-Native and NodeJs).
+                                <br/>
+                                <br/>
+                                I studied mechatronics engineering at the same time i was learning to create
+                                web and mobile applications, taking courses from platforms like Platzi and Udemy,
+                                and the Academlo´s Bootcamp. 
+                                <br/>
+                                <br/>
+                                I have business experience with React-Native, NodeJs and MYSQL, I used all of 
+                                them when i did my professional practices in the company 
+                                <span className='md-highlight-text'> Codeway Solutions. </span>
+                                 
                         </p>
                     </div>
                 </div>

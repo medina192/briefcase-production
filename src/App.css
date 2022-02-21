@@ -1,11 +1,42 @@
-.App {
-  text-align: center;
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #FF5714 orange;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 2rem;
 }
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FF5714;
+  border-radius: 1rem;
+  border: 3px solid white;
+}
+
+
+
+
+
+/*
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  animation: example 5s linear 2s infinite alternate;
+
+  animation-fill-mode: both;
+
+*/
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

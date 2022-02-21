@@ -71,6 +71,7 @@
 .pc-title-link{
     font-size: 1.8rem;
     margin: .5rem 0;
+ 
 }
 
 .pc-link{
@@ -79,6 +80,7 @@
     color: #54457F;
     cursor: pointer;
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 
@@ -96,6 +98,15 @@
     animation: show-proyect-info .6s ease-in;
 }
 
+.pc-showInfo-btn{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+}
 
 @keyframes show-proyect-info {
     from {
@@ -105,4 +116,81 @@
         height: 75rem;
     }
   }
+
+
+
+@media (max-width: 500px){
+    .pc-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        -webkit-box-shadow: 4px 5px 5px -3px #000000; 
+        box-shadow: 4px 5px 5px -3px #000000;
+        background-color: white;
+        border-radius: 1rem;
+        height: 25.5rem;
+        overflow-y: hidden;
+        transition: all .8s ease-in-out ;
+        max-width: 95vw;
+        overflow-x: hidden;
+    }
+
+
+    .pc-card-animation{
+        height: 80rem;
+        animation-fill-mode: both;
+        animation: show-proyect-with-btn-info 1s ease-in;
+    }
+    
+    .pc-card-aniamtion-reverse{
+        height: 25.5rem;
+        animation-direction: reverse;
+        animation-fill-mode: both;
+        animation: show-proyect-with-btn-info .6s ease-in;
+    }
+
+    @keyframes show-proyect-with-btn-info {
+        from {
+            height: 25.5rem;
+        }
+        to { 
+            height: 80rem;
+        }
+      }
+
+
+      .pc-con-tech-img{
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(3, minmax(5rem, 5rem));
+        width: 100%;
+        padding: 1rem 0rem;
+        margin-bottom: 2rem;
+    }
+    
+    .pc-tech-image{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5px;
+    }
+    
+    .pc-title-link{
+        font-size: 1.8rem;
+        margin: .5rem 0;
+     
+    }
+    
+    .pc-link{
+        text-align: center;
+        font-size: 1.7rem;
+        color: #54457F;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+}
 

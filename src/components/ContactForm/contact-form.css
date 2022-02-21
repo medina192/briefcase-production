@@ -87,8 +87,7 @@
     flex-direction: column;
     align-items: flex-end;
     width: 50%;
-
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 2rem;
 }
 
 .cf-text-input{
@@ -135,6 +134,135 @@
 }
 
 .cf-send-email-btn:hover{
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    .cf-con{
+        margin-bottom: 5rem;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cf-con-form-icons{
+        max-width: 95vw;
+        padding: 2rem 0;
+        border-radius: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .cf-form-title{
+        color: var(--orange);
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .cf-con-left-right{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .cf-con-form-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    
+    .cf-text-input{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .cf-text-area-input{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .cf-send-email-btn{
+        border-radius: .5rem;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        cursor: pointer;
+        border: none;
+        background-color: var(--orange);
+        transition: all .1s ease-in;
+        font-size: 1.6rem;
+        color: white;
+    }
+
+
+
+    .cf-flex-con-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .cf-con-grid-icons{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem 1rem; 
+        grid-template-columns: repeat(2, auto);
+    }
+    
+    .cf-icon-grid{
+        color: var(--orange);
+        font-size: 2.5rem;
+    }
+    
+    
+    
+    .cf-text-icon-grid{
+        color: var(--orange);
+        font-size: 1.7rem;
+    }
+    
+    
+    .cf-con-flex-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .cf-con-icon-flex{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin: 0 1rem;
+        background-color: var(--orange);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .cf-icon-flex{
+        font-size: 2rem;
+        color: white;
+    }
     
 }
 
