@@ -3,6 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import './main-background.css'
 import ParticlesBackGround from './ParticlesBackGround/ParticlesBackGround';
+import { BiMenu } from "react-icons/bi";
+
+import axios from  'axios';
+const serverPath = "http://localhost:3004";
+
 
 //https://www.wallpaperflare.com/search?wallpaper=binary
 // https://particles.js.org/docs/interfaces/Options_Interfaces_Background_IBackground.IBackground.html
@@ -21,32 +26,35 @@ const MainBackground = () => {
     const [changeTypeText, setchangeTypeText] = useState('Frontend: React Js');
     const [widthScreen, setSidthScreen] = useState(getWindowDimensions);
 
-    console.log('width', widthScreen);
-
-    useEffect(() => {
+    const downloadCV = async() => {
       
-        /*
-        setTimeout(() => {
-            setchangeTypeText('Backend: Node Js')
-        }, 5100);
+      axios.post( 
+        serverPath+'/api/downloadCV', { responseType: 'blob' },
+      )
+      .then(response => {
+        console.log('rrresponse ', response);
+        const url = window.URL.createObjectURL(new Blob([response.data]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'cv.pdf'); //or any other extension
+        document.body.appendChild(link);
+        link.click();
 
-        
-        setTimeout(() => {
-            setchangeTypeText('Mobile: React-Native, Kotlin')
-        }, 10600);
-
-        setTimeout(() => {
-            setchangeTypeText('Alejandro Díaz Developer')
-        }, 15700);
-        */
-
-    window.addEventListener('resize', () => {
-    });
-      return () => {
-        
-      }
-    }, [])
+      })
+      .catch( error => {
+        console.log('error downloading cv', error);
+      })
     
+
+    }
+    
+
+    
+
+
+    const openMenu = () => {
+
+    }
 
 
   return (
@@ -60,8 +68,10 @@ const MainBackground = () => {
               <a href='#aboutMe' className='mb-anchor-link'>About me</a>
               <a href='#proyects' className='mb-anchor-link'>Proyects</a>
               <a href='#contact' className='mb-anchor-link'>Contact</a>
-              <p className='mb-anchor-link mb-show-cv'>Download CV</p>
+              <a href="https://ugtomx-my.sharepoint.com/:b:/g/personal/ja_diazmedina_ugto_mx/ERbAqokaub9Pl19pFlNMfu8BzqrPFVk48YFYyLhMxrYQWg?e=7cdh6n"
+               target="_blank" rel="noreferrer" className='mb-anchor-link mb-show-cv'>Download CV</a>
             </div>
+              <BiMenu onClick={ openMenu } className="hamburguer-icon"/>
         </div>
 
         <div className="mb-opacity-background"></div>

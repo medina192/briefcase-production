@@ -61,6 +61,11 @@
 
 }
 
+.hamburguer-icon{
+  display: none;
+}
+
+
 /* sibling selector */
 
 .mb-show-cv:hover + button{
@@ -140,7 +145,7 @@
   animation: text-typing-growing 1.5s steps(16, end) 2s 1 normal;
   animation-fill-mode: forwards;
   color: white;
-  margin-top: 3rem;
+  margin-top: 4rem;
 
   /*
   text-typing-shrink 1.5s steps(16, end) 3.5s 1 normal;  
@@ -156,7 +161,7 @@
 
 .mb-aux-text{
     font-size: 4rem;
-    height: 45vh;
+    height: 42vh;
     visibility: hidden;
 }
 
@@ -224,6 +229,26 @@
       padding: 0;
       overflow: hidden;
     }
+
+
+    .mb-con-nab-bar{
+      padding: 1rem 1rem;
+      
+    }
+    
+    .mb-my-name-anchor-link{
+      font-size: 1.6rem;
+    }
+
+    .mb-con-btn-navigate{
+      display: none
+    }
+
+    .hamburguer-icon{
+      display: block;
+      font-size: 1.8rem;
+      color: white;
+    }
   
     .mb-con-titles{
       position: absolute;
@@ -267,7 +292,7 @@
 
     .mb-aux-text{
       font-size: 2rem;
-      height: 35vh;
+      height: 30vh;
       visibility: hidden;
   }
 
@@ -278,5 +303,6 @@
     margin-left: .2rem;
     opacity: 0;
     animation: custom-cursor .3s steps(2, end) 2s infinite alternate;
+    color: var(--orange);
   }
 }

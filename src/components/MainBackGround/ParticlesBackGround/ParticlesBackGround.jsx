@@ -12,7 +12,6 @@ const ParticlesBackGround = React.memo(() => {
         //console.log(container);
     };
 
-    console.log('partciles');
 
 
 
