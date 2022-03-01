@@ -3,15 +3,25 @@
 .my-con-description{
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    align-items: center;
+}
+
+.my-max-width-con{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .my-con-items-description{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    padding: 6rem 0;
+    width: 100%;
+    /*
+    border: solid 2px var(--orange);
+    */
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 2rem 0;
 }
 
 .my-image{
@@ -19,6 +29,7 @@
     height: 40rem;
     margin-right: 4rem;
     visibility: hidden;
+    border-radius: 1rem;
 }
 
 .my-image-animation{
@@ -37,10 +48,13 @@
     overflow-y: hidden;
     overflow-x: hidden;
     visibility: hidden;
+    color: var(--lightBlue);
+    font-weight: 500;
 }
 
 .md-highlight-text{
     font-weight: 700;
+    color: var(--mainBlue);
 }
 
 .my-text-about-me-animation{

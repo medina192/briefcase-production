@@ -1,0 +1,46 @@
+
+@import '../../../variables.css';
+
+.sc-con-tech-category{
+    background-color: #ffab89;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sc-title-tech-category{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--lightBlue);
+}
+
+.sc-con-cards-tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 500px){
+    .sc-con-tech-category{
+        background-color: #ffab89;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 2rem 0;
+        width: 90%;
+    }
+    
+    .sc-title-tech-category{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: var(--lightBlue);
+    }
+    
+    .sc-con-cards-tech{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

@@ -7,7 +7,7 @@
 }
 
 .cf-con-form-icons{
-    background-color: white;
+    background-color: #f5f5f5;
     padding: 2rem;
     border-radius: 1rem;
     margin: 2rem 0;
@@ -98,6 +98,7 @@
     border: 1px solid #666;
     outline: none;
     padding: .8rem;
+    background-color: #f5f5f5;
 }
 
 .cf-text-input:focus{
@@ -113,6 +114,7 @@
     border: 1px solid #666;
     outline: none;
     padding: .8rem;
+    background-color: #f5f5f5;
 }
 
 .cf-text-area-input:focus{
@@ -131,10 +133,14 @@
     transition: all .1s ease-in;
     font-size: 2rem;
     color: white;
+    border: solid 1px white;
+    transition: all .15s linear;
 }
 
 .cf-send-email-btn:hover{
-    
+    color: var(--orange);
+    background-color: white;
+    border: solid 1px var(--orange);
 }
 
 

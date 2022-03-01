@@ -44,7 +44,9 @@ const MyDescription = () => {
 
     return (
         <div ref={conVisible} id="aboutMe" className="my-con-description">
-            <div className="max-width-con">
+            <div className="my-max-width-con">
+                <h3 className='title'>About Me</h3>
+                <div className='line'></div>
                 <div className="my-con-items-description">
                     <img src='/img/my_image.jpg' 
                         className={`my-image ${showAnimationImage ? 'my-image-animation' : ''}`} 

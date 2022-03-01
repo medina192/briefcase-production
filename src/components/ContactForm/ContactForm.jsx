@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, {  } from 'react';
 import './contact-form.css';
 
 import { 
@@ -12,9 +12,6 @@ import {
 import Form from './Form/Form';
 
 const ContactForm = () => {
-
-
-
 
 
     return(

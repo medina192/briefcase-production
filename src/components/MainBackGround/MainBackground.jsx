@@ -29,10 +29,10 @@ const MainBackground = () => {
     const downloadCV = async() => {
       
       axios.post( 
-        serverPath+'/api/downloadCV', { responseType: 'blob' },
+        serverPath+'/api/downloadcv', { responseType: 'blob' },
       )
       .then(response => {
-        console.log('rrresponse ', response);
+
         const url = window.URL.createObjectURL(new Blob([response.data]));
         const link = document.createElement('a');
         link.href = url;
@@ -42,7 +42,7 @@ const MainBackground = () => {
 
       })
       .catch( error => {
-        console.log('error downloading cv', error);
+        console.log('error downloading cv', error.response);
       })
     
 
@@ -56,6 +56,14 @@ const MainBackground = () => {
 
     }
 
+    useEffect(() => {
+      
+    
+      return () => {
+      }
+    }, [])
+    
+
 
   return (
       <div className='mb-con'>
@@ -68,10 +76,10 @@ const MainBackground = () => {
               <a href='#aboutMe' className='mb-anchor-link'>About me</a>
               <a href='#proyects' className='mb-anchor-link'>Proyects</a>
               <a href='#contact' className='mb-anchor-link'>Contact</a>
-              <a href="https://ugtomx-my.sharepoint.com/:b:/g/personal/ja_diazmedina_ugto_mx/ERbAqokaub9Pl19pFlNMfu8BzqrPFVk48YFYyLhMxrYQWg?e=7cdh6n"
+              <a href="https://alexdiazdeveloper.com/cv.pdf"
                target="_blank" rel="noreferrer" className='mb-anchor-link mb-show-cv'>Download CV</a>
             </div>
-              <BiMenu onClick={ openMenu } className="hamburguer-icon"/>
+              <BiMenu onClick={ downloadCV } className="hamburguer-icon"/>
         </div>
 
         <div className="mb-opacity-background"></div>

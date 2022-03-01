@@ -1,0 +1,185 @@
+@import '../../../variables.css';
+
+
+.mic-con-opacity{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mic-aux-con-card{
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.mic-card{
+    background-color: azure;
+    width: 50rem;
+    height: 70vh;
+    overflow-y: scroll;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+
+.mic-proyect-name{
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 700;
+    color: var(--orange);
+
+}
+
+.mic-description{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: var(--mainBlue);
+}
+
+.mic-tech-use-title{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.mic-line-tech-used{
+    width: 20rem;
+    height: 2px;
+    background-color: var(--orange);
+}
+
+
+.mic-con-tech-img{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(8.5rem, auto));
+    width: 100%;
+    padding: 1rem 0rem;
+    margin-bottom: 2.5rem;
+}
+
+.mic-con-tech{
+    display: flex;
+    align-items: center;
+}
+
+.mic-tech-image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+}
+
+.mic-text-tech{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.mic-title-link{
+    font-size: 1.8rem;
+    margin: .5rem 0;
+ 
+}
+
+
+
+.mic-title-link{
+    font-size: 1.8rem;
+    margin: .5rem 0;
+ 
+}
+
+.mic-con-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.mic-link{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--orange);
+    margin-right: .5rem;
+}
+
+.mic-arrow-link{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--orange);
+    margin-left: .5rem;
+}
+
+
+.mic-btn-close-card{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px white;
+    transition: all .15s linear;
+    margin-top: 2rem;
+}
+
+.mic-btn-close-card:hover{
+    color: var(--orange);
+    background-color: white;
+    border: solid 1px var(--orange);
+}
+
+
+
+/*
+.mic-card::-webkit-scrollbar-thum{
+    background-color: red;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;  
+}
+
+.mic-card::-webkit-scrollbar {
+    width: 16px;
+}
+
+*/
+
+@media (max-width: 500px){
+    .mic-card{
+        background-color: azure;
+        width: 90vw;
+        height: 90vh;
+        padding: 1rem
+    }
+
+    .mic-con-tech-img{
+        display: grid;
+        justify-content: center;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, minmax(5rem, auto));
+        width: 100%;
+        padding: 1rem 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .mic-tech-image{
+        width: 5rem;
+        height: 5rem;
+        border-radius: .5rem;
+    }
+}

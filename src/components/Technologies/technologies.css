@@ -1,0 +1,18 @@
+
+
+.t-con-tech-data{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 500px){
+    .t-con-tech-data{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

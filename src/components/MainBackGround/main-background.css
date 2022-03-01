@@ -1,11 +1,12 @@
 @import '../../variables.css';
 
 .mb-con{
+  display: flex;
+  justify-content: center;
     position: relative;
-    margin-left: 5px;
     padding: 0;
     overflow: hidden;
-
+    margin-bottom: 2.5rem;
 }
 
 .mb-con-nab-bar{

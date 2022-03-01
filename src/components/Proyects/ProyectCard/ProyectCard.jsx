@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MoreInformationCard from '../MoreInformationCard/MoreInformationCard';
 import './proyect-card.css';
 
 /*
@@ -9,7 +10,7 @@ Using target="_blank" without rel="noreferrer" (which implies rel="noopener") is
 
 const ProyectCard = ({ proyectInfo }) => {
 
-    const [showAllCard, setShowAllCard] = useState(false);
+    const [showMoreInfo, setShowMoreInfo] = useState(false);
 
     const { innerWidth: width, innerHeight: height } = window;
 
@@ -17,26 +18,30 @@ const ProyectCard = ({ proyectInfo }) => {
         <div //onMouseEnter={() => setShowAnimation(true) } 
              //onMouseLeave={() => setShowAnimation(false) } 
 
-             className={ `pc-card ${ (showAllCard && width < 500) ? 
-                '' : ''}`  }>
+             className='pc-card'>
 
             <img src={proyectInfo.urlImage} className="pc-web-image" alt="proyect" />
             
             <p className='pc-proyect-name'>{ proyectInfo.name }</p>
 
+            <button onClick={() => setShowMoreInfo(true)} className='pc-showInfo-btn'>
+                    More Info...
+            </button>
+
             {
-                width < 500 ? 
-                (
-                    <button onClick={() => setShowAllCard(true)} className='pc-showInfo-btn'>
-                        More Info...
-                    </button>
-                )
-                :
-                (
-                    <>
-                    </>
-                )
+                showMoreInfo ? 
+                (<MoreInformationCard proyectInfo={ proyectInfo } setShowMoreInfo={ setShowMoreInfo }/>)
+                :(<></>)
             }
+
+        </div>
+    );
+}
+
+export default ProyectCard;
+
+
+/*
 
             <p className='pc-description'>{ proyectInfo.description }</p>
             <p className='pc-tech-use-title'>Used Technologies</p>
@@ -86,8 +91,4 @@ const ProyectCard = ({ proyectInfo }) => {
                 )
             }
 
-        </div>
-    );
-}
-
-export default ProyectCard;
+ */

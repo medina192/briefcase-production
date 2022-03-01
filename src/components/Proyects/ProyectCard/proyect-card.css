@@ -6,12 +6,11 @@
     align-items: center;
     padding: 1rem;
     margin: 1.5rem 0;
-    -webkit-box-shadow: 4px 5px 5px -3px #000000; 
-    box-shadow: 4px 5px 5px -3px #000000;
-    background-color: white;
+    box-shadow: 4px 10px 20px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 10px 20px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 10px 20px -9px rgba(0,0,0,0.75); 
+    background-color: #f5f5f5;
     border-radius: 1rem;
-    height: 32rem;
-    overflow-y: hidden;
     transition: all .8s ease-in-out ;
 }
 
@@ -86,18 +85,7 @@
 
 
 
-.pc-card-animation{
-    height: 75rem;
-    animation-fill-mode: both;
-    animation: show-proyect-info 1s ease-in;
-}
 
-.pc-card-aniamtion-reverse{
-    height: 32rem;
-    animation-direction: reverse;
-    animation-fill-mode: both;
-    animation: show-proyect-info .6s ease-in;
-}
 
 .pc-showInfo-btn{
     font-size: 2rem;
@@ -106,17 +94,17 @@
     color: white;
     padding: 1rem 2rem;
     outline: none;
-    border: none;
+    cursor: pointer;
+    border: solid 1px white;
+    transition: all .15s linear;
 }
 
-@keyframes show-proyect-info {
-    from {
-        height: 32rem;
-    }
-    to { 
-        height: 75rem;
-    }
-  }
+.pc-showInfo-btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border: solid 1px var(--orange);
+}
+
 
 
 
@@ -131,35 +119,10 @@
         box-shadow: 4px 5px 5px -3px #000000;
         background-color: white;
         border-radius: 1rem;
-        height: 25.5rem;
-        overflow-y: hidden;
         transition: all .8s ease-in-out ;
         max-width: 95vw;
         overflow-x: hidden;
     }
-
-
-    .pc-card-animation{
-        height: 80rem;
-        animation-fill-mode: both;
-        animation: show-proyect-with-btn-info 1s ease-in;
-    }
-    
-    .pc-card-aniamtion-reverse{
-        height: 25.5rem;
-        animation-direction: reverse;
-        animation-fill-mode: both;
-        animation: show-proyect-with-btn-info .6s ease-in;
-    }
-
-    @keyframes show-proyect-with-btn-info {
-        from {
-            height: 25.5rem;
-        }
-        to { 
-            height: 80rem;
-        }
-      }
 
 
       .pc-con-tech-img{

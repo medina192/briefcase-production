@@ -2,6 +2,7 @@
 exports.proyectsData = [
     {
         name: 'Dress Shop',
+        category: 'web',
         urlImage: '/img/store.jpg',
         description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
         technologies: [
@@ -22,21 +23,15 @@ exports.proyectsData = [
                 urlImage: '/img/html5.png'
             }
         ],
-        urls: [
-            {
-                url: 'https://boring-brahmagupta-2e129d.netlify.app/',
-                available: true
-            },
-            {
-                url: 'https://github.com/medina192/store-app',
-                available: true
-            }
-        ]
+        urlWebSite: 'https://boring-brahmagupta-2e129d.netlify.app/',
+        urlGitHubRepo: 'https://github.com/medina192/store-app',
+
     },
     {
         name: 'Github searcher app',
+        category: 'web',
         urlImage: '/img/github.png',
-        description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
+        description: 'Look for the github user you desire¡, you will get the information about him',
         technologies: [
             {
                 name: 'React',
@@ -55,21 +50,14 @@ exports.proyectsData = [
                 urlImage: '/img/html5.png'
             }
         ],
-        urls: [
-            {
-                url: 'https://musing-hopper-1629a5.netlify.app/',
-                available: true
-            },
-            {
-                url: 'https://github.com/medina192/github-app',
-                available: true
-            }
-        ]
+        urlWebSite: 'https://musing-hopper-1629a5.netlify.app/',
+        urlGitHubRepo: 'https://github.com/medina192/github-app',
     },
     {
         name: 'Weather app',
+        category: 'web',
         urlImage: '/img/weather.jpg',
-        description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
+        description: 'Ask for the city weather what you want¡, this app will give you the weather information',
         technologies: [
             {
                 name: 'React',
@@ -88,21 +76,14 @@ exports.proyectsData = [
                 urlImage: '/img/html5.png'
             }
         ],
-        urls: [
-            {
-                url: 'https://weather-lovat-three.vercel.app/',
-                available: true
-            },
-            {
-                url: 'https://github.com/medina192/weather',
-                available: true
-            }
-        ]
+        urlWebSite: 'https://weather-lovat-three.vercel.app/',
+        urlGitHubRepo: 'https://github.com/medina192/weather',
     },
     {
         name: 'Bug Chat',
+        category: 'web',
         urlImage: '/img/chat.png',
-        description: 'Dress shop demo, you can select among a quite collection of clothes of the higher quality',
+        description: 'Chat to talk with your friends in real time, invite them now¡',
         technologies: [
             {
                 name: 'Node Js',
@@ -125,15 +106,22 @@ exports.proyectsData = [
                 urlImage: '/img/html5.png'
             }
         ],
-        urls: [
+        urlWebSite: 'http://137.184.224.194:3001/chat/auth/register',
+        urlGitHubRepo: 'https://github.com/medina192/backend-chat',
+    },
+    {
+        name: 'Arc Calculator for structures',
+        category: 'mobile',
+        urlImage: '/img/arc.png',
+        description: 'Excellent Calculator to calculate the length of an arc, a cirlce and other circle´s figures',
+        technologies: [
             {
-                url: 'http://161.35.224.248:3001/chat/auth/login',
-                available: true
+                name: 'Kotlin',
+                urlImage: '/img/kotlin.png'
             },
-            {
-                url: 'https://github.com/medina192/backend-chat',
-                available: true
-            }
-        ]
+        ],
+        playStoreLink: 'https://play.google.com/store/apps/details?id=com.exa.arcappkotlinadmobtamimedinapleaseworks&hl=es_MX&gl=US',
+
     },
 ]
+

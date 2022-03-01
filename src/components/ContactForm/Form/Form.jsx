@@ -1,10 +1,18 @@
 import React, { useRef, useState } from 'react';
 import '../contact-form.css';
 
+import axios from  'axios';
+
+import { proUrl, envUrl } from '../../../urlDomain';
+import ModalEmailSend from '../ModalEmailSend/ModalEmailSend';
+
+const serverPath = proUrl;
+
+
 
 const Form = () => {
 
-
+    const [showModalEmail, setshowModalEmail] = useState(false)
 
     const [inputsValues, setInputsValues] = useState({
         name: '',
@@ -87,19 +95,39 @@ const Form = () => {
 
     
     
-    const sendEmail = (e) => {
+    const sendEmail = async(e) => {
+
+        const body = {
+            from: inputsValues.email,
+            subject: inputsValues.subject,
+            name: inputsValues.name,
+            text: inputsValues.message
+        }
+
 
         e.preventDefault();
         if(inputsAreEmpty())
 
             return;
         else{
-            setInputsValues({
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
-            })
+             axios.post( 
+                serverPath+'/api/sendemail',
+                body,
+              )
+              .then( res => {
+                setInputsValues({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+                setshowModalEmail(true);
+              })
+              .catch( error => {
+                console.log('error sending email ', error);
+              })
+
+
         }
 
     }
@@ -196,6 +224,11 @@ const Form = () => {
             <button onClick={ sendEmail } className='cf-send-email-btn'>
                 Send
             </button>
+            {
+                showModalEmail ? 
+                ( <ModalEmailSend setshowModalEmail={ setshowModalEmail } />)
+                :(<></>)
+            }
         </form>
   )
 }

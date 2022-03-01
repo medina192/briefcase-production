@@ -1,0 +1,65 @@
+
+@import '../../../variables.css';
+
+.mes-con-opacity{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000099;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mes-card{
+    border-radius: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.mes-text{
+    font-size: 1.8rem;
+    color: var(--mainBlue);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.mes-icon-check{
+    font-size: 5rem;
+    color: var(--orange);
+    margin-bottom: 2rem;
+}
+
+
+.mes-btn-dismiss{
+    padding: 1rem;
+    font-size: 2rem;
+    border: solid 1px white;
+    border-radius: .5rem;
+    transition: all .2s linear;
+    background-color: var(--orange);
+    color: white;
+    margin-top: 1rem;
+}
+
+.mes-btn-dismiss:hover{
+    border: solid 1px var(--orange);
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+@media (max-width: 500px)
+{
+    .mes-card{
+        padding: 2rem;
+        max-width: 95vw;
+    }
+}
