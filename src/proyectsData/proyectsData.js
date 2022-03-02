@@ -16,11 +16,11 @@ exports.proyectsData = [
             },
             {
                 name: 'CSS',
-                urlImage: '/img/cs.png'
+                urlImage: '/img/css.jpg'
             },
             {
                 name: 'html',
-                urlImage: '/img/ht.jpg'
+                urlImage: '/img/htm.jpg'
             }
         ],
         urlWebSite: 'https://boring-brahmagupta-2e129d.netlify.app/',
@@ -30,7 +30,7 @@ exports.proyectsData = [
     {
         name: 'Bug Chat',
         category: 'web',
-        urlImage: '/img/ch.jpg',
+        urlImage: '/img/cha.jpg',
         description: 'Chat to talk with your friends in real time, invite them now¡',
         technologies: [
             {
@@ -46,16 +46,16 @@ exports.proyectsData = [
                 urlImage: '/img/reactblack.png'
             },
             {
-                name: 'Js',
-                urlImage: '/img/js.png'
+                name: 'Typescript',
+                urlImage: '/img/typescript.png'
             },
             {
                 name: 'CSS',
-                urlImage: '/img/cs.png'
+                urlImage: '/img/css.jpg'
             },
             {
                 name: 'html',
-                urlImage: '/img/ht.jpg'
+                urlImage: '/img/htm.jpg'
             }
         ],
         urlWebSite: 'http://137.184.224.194:3001/chat/auth/register',
@@ -72,16 +72,16 @@ exports.proyectsData = [
                 urlImage: '/img/reactblack.png'
             },
             {
-                name: 'CSS',
-                urlImage: '/img/cs.png'
-            },
-            {
                 name: 'Js',
                 urlImage: '/img/js.png'
             },
             {
+                name: 'CSS',
+                urlImage: '/img/css.jpg'
+            },
+            {
                 name: 'html',
-                urlImage: '/img/ht.jpg'
+                urlImage: '/img/htm.jpg'
             }
         ],
         urlWebSite: 'https://weather-lovat-three.vercel.app/',
@@ -90,7 +90,7 @@ exports.proyectsData = [
     {
         name: 'Github searcher app',
         category: 'web',
-        urlImage: '/img/gt.png',
+        urlImage: '/img/git.jpg',
         description: 'Look for the github user you desire¡, you will get the information about him',
         technologies: [
             {
@@ -102,12 +102,12 @@ exports.proyectsData = [
                 urlImage: '/img/js.png'
             },
             {
-                name: 'CSS',
-                urlImage: '/img/cs.png'
+                name: 'Tailwind Css',
+                urlImage: '/img/tail.jpg'
             },
             {
                 name: 'html',
-                urlImage: '/img/ht.jpg'
+                urlImage: '/img/htm.jpg'
             }
         ],
         urlWebSite: 'https://musing-hopper-1629a5.netlify.app/',
