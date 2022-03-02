@@ -30,11 +30,11 @@ const MyDescription = () => {
             setShowAnimationText(true);
         }
         else{
-            if(yTop < (0.3 * height))
+            if(yTop < (0.6 * height))
             {
                 setShowAnimationImage(true);
             }
-            if(yTop < (-0.3 * height))
+            if(yTop < (0.3 * height))
             {
                 setShowAnimationText(true);
             }

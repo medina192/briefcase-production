@@ -226,7 +226,6 @@
 @media (max-width: 500px) {
     .mb-con{
       position: relative;
-      margin-left: 5px;
       padding: 0;
       overflow: hidden;
     }
@@ -238,7 +237,7 @@
     }
     
     .mb-my-name-anchor-link{
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
 
     .mb-con-btn-navigate{
@@ -247,7 +246,7 @@
 
     .hamburguer-icon{
       display: block;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       color: white;
     }
   
@@ -267,7 +266,7 @@
       color: white;
       opacity: 0;
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       animation-name: movetitles;
       animation-duration: 2s;
       animation-timing-function: cubic-bezier(.53,.11,.57,.95);
@@ -279,7 +278,7 @@
       padding: 1rem;
       white-space: normal;
       overflow: hidden;
-      font-size: 3.4rem;
+      font-size: 3.8rem;
       opacity: 0;
       animation: text-typing-growing 1.5s steps(16, end) 2s 1 normal;
       animation-fill-mode: forwards;
@@ -293,7 +292,7 @@
 
     .mb-aux-text{
       font-size: 2rem;
-      height: 30vh;
+      height: 35vh;
       visibility: hidden;
   }
 

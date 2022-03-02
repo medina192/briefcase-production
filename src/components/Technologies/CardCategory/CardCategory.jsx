@@ -7,7 +7,11 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 const CardCategory = ({ technology }) => {
   return (
     <div className="cc-card">
-      <BsFillCheckCircleFill className='cc-icon' />
+      {
+        /*
+              <BsFillCheckCircleFill className='cc-icon' />
+        */
+      }
       <p className='cc-tech-name'>{ technology.name }</p>
     </div>
   )

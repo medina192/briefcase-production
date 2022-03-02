@@ -16,11 +16,11 @@ exports.proyectsData = [
             },
             {
                 name: 'CSS',
-                urlImage: '/img/css3.png'
+                urlImage: '/img/cs.png'
             },
             {
                 name: 'html',
-                urlImage: '/img/html5.png'
+                urlImage: '/img/ht.jpg'
             }
         ],
         urlWebSite: 'https://boring-brahmagupta-2e129d.netlify.app/',
@@ -28,11 +28,19 @@ exports.proyectsData = [
 
     },
     {
-        name: 'Github searcher app',
+        name: 'Bug Chat',
         category: 'web',
-        urlImage: '/img/github.png',
-        description: 'Look for the github user you desire¡, you will get the information about him',
+        urlImage: '/img/ch.jpg',
+        description: 'Chat to talk with your friends in real time, invite them now¡',
         technologies: [
+            {
+                name: 'Node Js',
+                urlImage: '/img/node.png'
+            },
+            {
+                name: 'Mongo Db',
+                urlImage: '/img/mongo.png'
+            },
             {
                 name: 'React',
                 urlImage: '/img/reactblack.png'
@@ -43,15 +51,15 @@ exports.proyectsData = [
             },
             {
                 name: 'CSS',
-                urlImage: '/img/css3.png'
+                urlImage: '/img/cs.png'
             },
             {
                 name: 'html',
-                urlImage: '/img/html5.png'
+                urlImage: '/img/ht.jpg'
             }
         ],
-        urlWebSite: 'https://musing-hopper-1629a5.netlify.app/',
-        urlGitHubRepo: 'https://github.com/medina192/github-app',
+        urlWebSite: 'http://137.184.224.194:3001/chat/auth/register',
+        urlGitHubRepo: 'https://github.com/medina192/backend-chat',
     },
     {
         name: 'Weather app',
@@ -64,31 +72,27 @@ exports.proyectsData = [
                 urlImage: '/img/reactblack.png'
             },
             {
+                name: 'CSS',
+                urlImage: '/img/cs.png'
+            },
+            {
                 name: 'Js',
                 urlImage: '/img/js.png'
             },
             {
-                name: 'CSS',
-                urlImage: '/img/css3.png'
-            },
-            {
                 name: 'html',
-                urlImage: '/img/html5.png'
+                urlImage: '/img/ht.jpg'
             }
         ],
         urlWebSite: 'https://weather-lovat-three.vercel.app/',
         urlGitHubRepo: 'https://github.com/medina192/weather',
     },
     {
-        name: 'Bug Chat',
+        name: 'Github searcher app',
         category: 'web',
-        urlImage: '/img/chat.png',
-        description: 'Chat to talk with your friends in real time, invite them now¡',
+        urlImage: '/img/gt.png',
+        description: 'Look for the github user you desire¡, you will get the information about him',
         technologies: [
-            {
-                name: 'Node Js',
-                urlImage: '/img/node.png'
-            },
             {
                 name: 'React',
                 urlImage: '/img/reactblack.png'
@@ -99,16 +103,17 @@ exports.proyectsData = [
             },
             {
                 name: 'CSS',
-                urlImage: '/img/css3.png'
+                urlImage: '/img/cs.png'
             },
             {
                 name: 'html',
-                urlImage: '/img/html5.png'
+                urlImage: '/img/ht.jpg'
             }
         ],
-        urlWebSite: 'http://137.184.224.194:3001/chat/auth/register',
-        urlGitHubRepo: 'https://github.com/medina192/backend-chat',
+        urlWebSite: 'https://musing-hopper-1629a5.netlify.app/',
+        urlGitHubRepo: 'https://github.com/medina192/github-app',
     },
+
     {
         name: 'Arc Calculator for structures',
         category: 'mobile',

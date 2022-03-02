@@ -111,7 +111,7 @@ const Form = () => {
             return;
         else{
              axios.post( 
-                serverPath+'/api/sendemail',
+                'https://alexdiazdeveloper.com/api/sendemail',
                 body,
               )
               .then( res => {
