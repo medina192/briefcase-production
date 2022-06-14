@@ -9,6 +9,34 @@
     margin-bottom: 2.5rem;
 }
 
+.mb-opacity-background{
+  background-color: #00000099;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image{
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.black-background-for-video{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.video-background{
+  width: 100vw;
+  top: -2rem;
+  position: absolute;
+}
+
 .mb-con-nab-bar{
   position: absolute;
   top: 0;
@@ -27,6 +55,7 @@
 
 .mb-my-name-anchor-link span{
   color: var(--orange);
+  z-index: -2;
 }
 
 .mb-con-btn-navigate{
@@ -104,13 +133,7 @@
     animation-fill-mode: forwards;
 }
 
-.mb-opacity-background{
-  background-color: #000000bb;
-  position: absolute;
-  top: 0;
-  width: 100vw;;
-  height: 100vh;
-}
+
 
 @keyframes movetitles {
     0% {
@@ -237,7 +260,7 @@
     }
     
     .mb-my-name-anchor-link{
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
 
     .mb-con-btn-navigate{
@@ -246,8 +269,9 @@
 
     .hamburguer-icon{
       display: block;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       color: white;
+      cursor: pointer;
     }
   
     .mb-con-titles{
@@ -292,7 +316,7 @@
 
     .mb-aux-text{
       font-size: 2rem;
-      height: 35vh;
+      height: 40vh;
       visibility: hidden;
   }
 

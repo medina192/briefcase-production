@@ -44,7 +44,7 @@
 
 .my-text-about-me{
     font-size: 1.8rem;
-    line-height: 3rem;
+    line-height: 2.8rem;
     overflow-y: hidden;
     overflow-x: hidden;
     visibility: hidden;
@@ -58,9 +58,6 @@
 }
 
 .my-text-about-me-animation{
-    font-size: 2rem;
-    line-height: 2.5rem;
-    overflow-y: hidden;
     visibility: visible;
     animation: move-2-left-text 1.5s ease-in;
 }

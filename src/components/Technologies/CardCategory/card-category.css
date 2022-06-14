@@ -34,6 +34,11 @@
     font-weight: 500;
 }
 
+.logo-skill-img{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
 @media(max-width: 500px){
     .cc-card{
         display: flex;

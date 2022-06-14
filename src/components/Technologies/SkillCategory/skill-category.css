@@ -2,7 +2,7 @@
 @import '../../../variables.css';
 
 .sc-con-tech-category{
-    background-color: #ffab89;
+    background-color: var(--card-color);
     border-radius: 1rem;
     padding: 2rem;
     margin-top: 1rem;

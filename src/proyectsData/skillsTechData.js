@@ -6,31 +6,38 @@ exports.skillsData = [
         technologies: [
             {
                 id: 1,
-                name: 'React'
+                name: 'React',
+                imgUrl: '/img/react6.png'
             },
             {
                 id: 2,
-                name: 'Typescript'
+                name: 'Typescript',
+                imgUrl: '/img/ts1.png'
             },
             {
                 id: 3,
-                name: 'Javascript'
+                name: 'Javascript',
+                imgUrl: '/img/js1.jpg'
             },
             {
                 id: 4,
-                name: 'Css'
+                name: 'Css',
+                imgUrl: '/img/css1.png'
             },
             {
                 id: 5,
-                name: 'Tailwind Css'
+                name: 'Tailwind Css',
+                imgUrl: '/img/tailwind1.png'
             },
             {
                 id: 6,
-                name: 'SASS'
+                name: 'SASS',
+                imgUrl: '/img/sass1.png'
             },
             {
                 id: 7,
-                name: 'Html'
+                name: 'Html',
+                imgUrl: '/img/html1.png'
             }
         ]
     },
@@ -40,7 +47,8 @@ exports.skillsData = [
         technologies: [
             {
                 id: 1,
-                name: 'Node Js'
+                name: 'Node Js',
+                imgUrl: '/img/node7.png'
             },
         ]
     },
@@ -50,11 +58,13 @@ exports.skillsData = [
         technologies: [
             {
                 id: 1,
-                name: 'MySQL'
+                name: 'MySQL',
+                imgUrl: '/img/mysql4.jpg'
             },
             {
                 id: 2,
-                name: 'MongoDB'
+                name: 'MongoDB',
+                imgUrl: '/img/mongo2.png'
             },
         ]
     },
@@ -64,11 +74,13 @@ exports.skillsData = [
         technologies: [
             {
                 id: 1,
-                name: 'React-Native'
+                name: 'React-Native',
+                imgUrl: '/img/rn1.png'
             },
             {
                 id: 2,
-                name: 'Kotlin'
+                name: 'Kotlin',
+                imgUrl: '/img/kotlin1.png'
             },
         ]
     }

@@ -6,6 +6,7 @@ import ParticlesBackGround from './ParticlesBackGround/ParticlesBackGround';
 import { BiMenu } from "react-icons/bi";
 
 import axios from  'axios';
+import LateralMenu from '../LateralMenu/LateralMenu';
 const serverPath = "http://localhost:3004";
 
 
@@ -22,9 +23,12 @@ function getWindowDimensions() {
   
 
 const MainBackground = () => {
+    
+    const vidRef = useRef(null)
 
-    const [changeTypeText, setchangeTypeText] = useState('Frontend: React Js');
-    const [widthScreen, setSidthScreen] = useState(getWindowDimensions);
+    const [widthScreen] = useState(getWindowDimensions);
+    const [showlateralMenu, setShowlateralMenu] = useState(false)
+
 
     const downloadCV = async() => {
       
@@ -49,26 +53,34 @@ const MainBackground = () => {
     }
     
 
-    
 
+    //useEffect(() => { vidRef.current.play(); },[]);
 
-    const openMenu = () => {
-
+    const openLateralMenu = () => {
+      setShowlateralMenu(true)
     }
-
-    useEffect(() => {
-      
-    
-      return () => {
-      }
-    }, [])
-    
 
 
   return (
       <div className='mb-con'>
 
-        <ParticlesBackGround />
+        {
+        //<ParticlesBackGround />
+        /*
+        <div className='black-background-for-video' 
+        //poster="/img/stars.jpg"
+        >
+          <video   ref={ vidRef } className="video-background" autoPlay muted loop>
+            <source src="/videos/chip2.mp4" type="video/mp4" ></source>
+          </video>
+        </div>
+                <img src="/img/stars.jpg" className='background-image' alt="stars" />
+                        <img src="/img/stars.jpg" className='background-image' alt="stars" />
+        */
+        }
+
+        <img src="/img/stars.jpg" className='background-image' alt="stars" />
+
         
         <div className="mb-con-nab-bar">
             <p className='mb-my-name-anchor-link'>Alejandro<span>Díaz</span>Developer</p>
@@ -79,7 +91,7 @@ const MainBackground = () => {
               <a href="https://alexdiazdeveloper.com/cv.pdf"
                target="_blank" rel="noreferrer" className='mb-anchor-link mb-show-cv'>Download CV</a>
             </div>
-              <BiMenu onClick={ downloadCV } className="hamburguer-icon"/>
+              <BiMenu onClick={ openLateralMenu } className="hamburguer-icon"/>
         </div>
 
         <div className="mb-opacity-background"></div>
@@ -136,7 +148,11 @@ const MainBackground = () => {
 
             <p className='mb-aux-text'>{'Nothing'}</p>
         </div>
-
+          {
+            showlateralMenu ? 
+            (<LateralMenu setShowlateralMenu={ setShowlateralMenu } />)
+            :(<></>)
+          }
      </div>
   );
 };

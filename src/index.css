@@ -16,12 +16,10 @@ code {
 .max-width-con{
   max-width: 1200px;
   margin: 0 auto;
+  background-color: bisque;
 }
 
-.p-opacity-background{
-  background-color: rgb(201, 28, 28);
-  z-index: 100;
-}
+
 
 .title{
   font-size: 3rem;

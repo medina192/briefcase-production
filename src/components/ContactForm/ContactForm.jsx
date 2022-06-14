@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, {  } from 'react';
 import './contact-form.css';
 
@@ -8,6 +9,8 @@ import {
          BsLinkedin,
          BsFacebook, 
          BsGithub,
+         BsCodeSlash,
+         BsFillTelephoneFill
           } from "react-icons/bs";
 import Form from './Form/Form';
 
@@ -28,14 +31,21 @@ const ContactForm = () => {
                                     <BsFillEnvelopeFill className='cf-icon-grid' />
                                     <p className='cf-text-icon-grid'>ja.diazmedina@ugto.mx</p>
                                     <BsWhatsapp className='cf-icon-grid' />
-                                    <p className='cf-text-icon-grid'>(+52) 352-105-67-73</p>
+                                    <a target="_blank" href='https://api.whatsapp.com/send?phone=523521056773' 
+                                      className='cf-text-icon-grid cf-cursor-pointer' rel="noreferrer">(+52) 352-105-67-73</a>
                                     <BsFillGeoAltFill className='cf-icon-grid' />
                                     <p className='cf-text-icon-grid'>Michoacán, México</p>
                             </div>
                             <div className="cf-con-flex-icons">
-                                    <div className="cf-con-icon-flex"><BsLinkedin className='cf-icon-flex' /></div>
-                                    <div className="cf-con-icon-flex"><BsFacebook className='cf-icon-flex' /></div>
-                                    <div className="cf-con-icon-flex"><BsGithub className='cf-icon-flex' /></div>
+                                    <a className="cf-a" href='https://www.linkedin.com/in/jose-alejandro-diaz-medina-b77971137/?locale=en_US' target="_blank" rel="noreferrer">
+                                      <div className="cf-con-icon-flex"><BsLinkedin className='cf-icon-flex' /></div>
+                                    </a>
+                                    <a className="cf-a" href='https://www.facebook.com/josealejandro.diazmedina.1/' target="_blank" rel="noreferrer">
+                                      <div className="cf-con-icon-flex"><BsFacebook className='cf-icon-flex' /></div>
+                                    </a>
+                                    <a className="cf-a" href='https://github.com/medina192' target="_blank" rel="noreferrer">
+                                      <div className="cf-con-icon-flex"><BsGithub className='cf-icon-flex' /></div>
+                                    </a>
                             </div>
                         </div>
 

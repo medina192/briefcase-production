@@ -4,13 +4,17 @@
 .cf-con{
     margin-bottom: 5rem;
     background-color: bisque;
+    margin-top: 5rem;
 }
 
+
 .cf-con-form-icons{
-    background-color: #f5f5f5;
     padding: 2rem;
     border-radius: 1rem;
     margin: 2rem 0;
+    -webkit-box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.52); 
+    box-shadow: 2px 5px 15px 1px rgba(0,0,0,0.52);
+    background-color: #f5f5f5;
 }
 
 .cf-form-title{
@@ -149,8 +153,21 @@
     color: rgb(200,0,0);
 }
 
+.cf-cursor-pointer{
+    cursor: pointer;
+    text-decoration: none;
+}
 
+.oo{
+    background-color: #fcfdfe;
+    padding: 2.2rem;
+}
 
+.o{
+    font-size: 2rem;
+    color: #333c4c;
+    margin-right: 2rem;
+}
 
 
 @media (max-width: 500px){
@@ -256,6 +273,10 @@
         margin-top: 2rem;
     }
     
+    .cf-a{
+        text-decoration: none;
+    }
+
     .cf-con-icon-flex{
         width: 4rem;
         height: 4rem;

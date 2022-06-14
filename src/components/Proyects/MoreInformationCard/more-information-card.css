@@ -17,6 +17,17 @@
 .mic-aux-con-card{
     overflow: hidden;
     border-radius: 2rem;
+    animation-fill-mode: forwards;
+    animation: mic-card-animation .4s linear;
+}
+
+@keyframes mic-card-animation {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .mic-card{

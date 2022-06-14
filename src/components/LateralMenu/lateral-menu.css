@@ -1,0 +1,114 @@
+@import '../../variables.css';
+
+.lm-background-opacity{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000bb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.lm-animation-menu{
+    animation: showLateralMenu .5s ease-in-out;
+}
+
+.lm-con-lateral-menu{
+    width: 75vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reverse-lm-con-lateral-menu{
+    animation-direction: reverse;
+    animation: showLateralMenu .5s ease-in-out;
+}
+
+.ml-close-lateral-menu{
+    font-size: 2.2rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 78vw;
+    color: white;
+    cursor: pointer;
+    z-index: 7;
+}
+
+
+.lm-con-image-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+    background-color: var(--lightBlue);
+    width: 75vw;
+    padding: 2rem;
+}
+
+.lm-circular-image{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.lm-con-text-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.lm-con-text-name span{
+    color: var(--orange);
+}
+
+.lm-con-links{
+    flex: 1;
+    width: 72vw;
+    background-color: bisque;
+}
+
+
+.lm-con-text-link{
+    margin: .2rem 0;
+    padding: 1rem .5rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    display: flex;
+    align-items: center;
+}
+
+.lm-con-text-link:hover{
+    background-color: #ffffffdd;
+}
+
+.lm-icon-link{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: var(--mainBlue);
+}
+
+.lm-text-link{
+    font-size: 1.6rem;
+    outline: none;
+    color: var(--mainBlue);
+    text-decoration: none;
+}
+
+
+@keyframes showLateralMenu {
+    from{
+        transform: translateX(-70vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
