@@ -1,8 +1,9 @@
 import React from 'react';
-import Particles from "react-tsparticles";
+//import Particles from "react-tsparticles";
 
 const ParticlesBackGround = React.memo(() => {
 
+    /*
     const particlesInit = (main) => {
         //console.log(main);
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
@@ -145,10 +146,11 @@ const ParticlesBackGround = React.memo(() => {
                     background_size: "cover"
                 }
                 */
-                
+                /*
             }}
             />
   )
+  */
 })
 
 export default ParticlesBackGround

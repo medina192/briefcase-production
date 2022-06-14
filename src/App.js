@@ -1,24 +1,28 @@
+import React, { Suspense } from 'react'
 import './normalize.css';
 import './App.css';
-import MainBackground from './components/MainBackGround/MainBackground';
-import MyDescription from './components/MyDescription/MyDescription.jsx';
-import Proyects from './components/Proyects/Proyects';
-import ContactForm from './components/ContactForm/ContactForm';
-import Technologies from './components/Technologies/Technologies';
-import Certificates from './components/Certificates/Certificates';
+
+const MainBackground = React.lazy(() => import('./components/MainBackGround/MainBackground'))
+const MyDescription = React.lazy(() => import('./components/MyDescription/MyDescription'));
+const Proyects = React.lazy(() => import('./components/Proyects/Proyects'));
+const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm'));
+const Technologies = React.lazy(() => import('./components/Technologies/Technologies'));
+const Certificates = React.lazy(() => import('./components/Certificates/Certificates'));
 
 function App() {
 
 
   return (
-    <div className='main-container'>
-      <MainBackground />
-      <MyDescription />
-      <Technologies />
-      <Proyects />
-      <Certificates />
-      <ContactForm />
-    </div>
+    <Suspense fallback={ null }>
+        <div className='main-container'>
+          <MainBackground />
+          <MyDescription />
+          <Technologies />
+          <Proyects />
+          <Certificates />
+          <ContactForm />
+        </div>
+    </Suspense>
   );
 }
 //       <Certificates />

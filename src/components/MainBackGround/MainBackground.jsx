@@ -1,8 +1,8 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 import './main-background.css'
-import ParticlesBackGround from './ParticlesBackGround/ParticlesBackGround';
+//import ParticlesBackGround from './ParticlesBackGround/ParticlesBackGround';
 import { BiMenu } from "react-icons/bi";
 
 import axios from  'axios';
@@ -24,34 +24,10 @@ function getWindowDimensions() {
 
 const MainBackground = () => {
     
-    const vidRef = useRef(null)
+    //const vidRef = useRef(null)
 
     const [widthScreen] = useState(getWindowDimensions);
     const [showlateralMenu, setShowlateralMenu] = useState(false)
-
-
-    const downloadCV = async() => {
-      
-      axios.post( 
-        serverPath+'/api/downloadcv', { responseType: 'blob' },
-      )
-      .then(response => {
-
-        const url = window.URL.createObjectURL(new Blob([response.data]));
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'cv.pdf'); //or any other extension
-        document.body.appendChild(link);
-        link.click();
-
-      })
-      .catch( error => {
-        console.log('error downloading cv', error.response);
-      })
-    
-
-    }
-    
 
 
     //useEffect(() => { vidRef.current.play(); },[]);
@@ -74,8 +50,6 @@ const MainBackground = () => {
             <source src="/videos/chip2.mp4" type="video/mp4" ></source>
           </video>
         </div>
-                <img src="/img/stars.jpg" className='background-image' alt="stars" />
-                        <img src="/img/stars.jpg" className='background-image' alt="stars" />
         */
         }
 

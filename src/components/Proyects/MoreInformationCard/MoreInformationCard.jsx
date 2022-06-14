@@ -1,6 +1,6 @@
 import React from 'react'
 import './more-information-card.css';
-import {  BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsFillExclamationOctagonFill, BsFillXCircleFill } from "react-icons/bs";
 
 const MoreInformationCard = ({ setShowMoreInfo, proyectInfo }) => {
 
@@ -11,6 +11,7 @@ const MoreInformationCard = ({ setShowMoreInfo, proyectInfo }) => {
     <div className='mic-con-opacity'>
       <div className="mic-aux-con-card">
         <div className="mic-card">
+            <BsFillXCircleFill onClick={ () => setShowMoreInfo(false) } className="p-close-icon" />
             <p className='mic-proyect-name'>{name}</p>
             <p className='mic-description'>{description}</p>
 
@@ -30,6 +31,21 @@ const MoreInformationCard = ({ setShowMoreInfo, proyectInfo }) => {
                     })
                 }
             </div>
+            {
+              proyectInfo.notResponsive && (
+                <div className='center'>
+                  <BsFillExclamationOctagonFill className='alert-icon'/>
+                  <p className='not-responsive'>{proyectInfo.notResponsive}</p>
+                </div>
+              )
+            }
+
+            {
+              proyectInfo.message && 
+                <div className='center'>
+                  <p className='not-responsive'>{proyectInfo.message}</p>
+                </div>
+            }
 
             {
               urlWebSite ? 

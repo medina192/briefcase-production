@@ -115,6 +115,89 @@ exports.proyectsData = [
     },
 
     {
+        name: 'Hanoi Tower App',
+        category: 'Web',
+        urlImage: '/img/hanoi.jpg',
+        description: 'Play and see all the necessary movements to complete the challenge',
+        technologies: [
+            {
+                name: 'React',
+                urlImage: '/img/react6.png'
+            },
+            {
+                name: 'Js',
+                urlImage: '/img/js1.jpg'
+            },
+            {
+                name: 'CSS',
+                urlImage: '/img/css1.png'
+            },
+            {
+                name: 'html',
+                urlImage: '/img/html1.png'
+            }
+        ],
+        urlWebSite: 'https://lively-trifle-68e8c7.netlify.app/',
+        urlGitHubRepo: 'https://github.com/medina192/hanoi-towers',
+        notResponsive: 'Do not view on a mobile or tablet device'
+    },
+
+    {
+        name: 'User searcher app',
+        category: 'Web',
+        urlImage: '/img/user.jpg',
+        description: 'Look for a user, the searcher uses an optimized search tree in a given list of users, as the google searcher',
+        technologies: [
+            {
+                name: 'React',
+                urlImage: '/img/react6.png'
+            },
+            {
+                name: 'Js',
+                urlImage: '/img/js1.jpg'
+            },
+            {
+                name: 'CSS',
+                urlImage: '/img/css1.png'
+            },
+            {
+                name: 'html',
+                urlImage: '/img/html1.png'
+            }
+        ],
+        urlWebSite: 'https://tiny-cassata-ddfd1f.netlify.app/',
+        urlGitHubRepo: 'https://github.com/medina192/trie-tree',
+        notResponsive: 'Do not view on a mobile or tablet device'
+    },
+
+    {
+        name: 'Social Responsability With The Woman',
+        category: 'Web',
+        urlImage: '/img/woman.jpg',
+        description: 'Know how to combat gender violence',
+        technologies: [
+            {
+                name: 'React',
+                urlImage: '/img/react6.png'
+            },
+            {
+                name: 'Js',
+                urlImage: '/img/js1.jpg'
+            },
+            {
+                name: 'CSS',
+                urlImage: '/img/css1.png'
+            },
+            {
+                name: 'html',
+                urlImage: '/img/html1.png'
+            }
+        ],
+        urlWebSite: 'https://respon-social.herokuapp.com/',
+        urlGitHubRepo: 'https://github.com/medina192/Proyecto-responsabilidad-social'
+    },
+
+    {
         name: 'Arc Calculator for structures',
         category: 'Mobile',
         urlImage: '/img/arc.png',
@@ -127,6 +210,28 @@ exports.proyectsData = [
         ],
         playStoreLink: 'https://play.google.com/store/apps/details?id=com.exa.arcappkotlinadmobtamimedinapleaseworks&hl=es_MX&gl=US',
 
+    },
+
+    {
+        name: 'Room Gym',
+        category: 'Mobile',
+        urlImage: '/img/room_gym.jpg',
+        description: 'Mobile App that allows the communication between clients and trainers',
+        technologies: [
+            {
+                name: 'React-Native',
+                urlImage: '/img/rn1.png'
+            },
+            {
+                name: 'Node Js',
+                urlImage: '/img/node7.png'
+            },
+            {
+                name: 'MySQL',
+                urlImage: '/img/mysql4.jpg'
+            }
+        ],
+        message: "The app is private, the links are not available"
     },
 ]
 

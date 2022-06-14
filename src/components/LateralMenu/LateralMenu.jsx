@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './lateral-menu.css';
 import { BsFillXCircleFill, 
          BsFillEnvelopeFill,

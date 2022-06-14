@@ -1,7 +1,7 @@
 import React, { useEffect, useRef} from 'react'
 import './certificates.css';
 import '../Proyects/ProyectCard/proyect-card.css';
-// https://certificates.academlo.com/en/verify/33568611572646?ref=email
+
 const Certificates = () => {
 
 

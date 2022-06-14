@@ -14,7 +14,6 @@
 }
 
 .p-con-categorie{
-
     padding: 1rem 3rem;
     cursor: pointer;
 }
@@ -33,7 +32,6 @@
     font-weight: 600;
     color: var(--mainBlue);
 }
-
 
 .p-con-grid-flex{
     display: grid;
